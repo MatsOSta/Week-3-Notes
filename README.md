@@ -87,3 +87,98 @@ PHP, Node.js backend code
 Databases
 Game servers
 CAN BE DISTRIBUTED!
+
+## Rootkits
+Type of malicious software
+Enables access to a computer
+masks its existence
+root is a reference to rooting, achieving admin-level acess to the OS
+typically installed after obtating priviledged access to the system
+exploit vulnerabillites
+priviledge escalation
+password cracking
+social engineering
+
+#SYS calls
+high level language, c c++
+high-level application programming interface (API)
+API
+WIN32
+POSIX API (Unix,MAC OS)
+Java API
+
+User mode 
+Kernel mode
+system call requests priviledged action
+
+##Rootkit detection
+difficult
+Rootkits subvert the software intended to find it
+alternative trusted OS should be used for detection and analysis
+signature scanning
+difference scanning
+memory dump
+
+Removal is complicated, potentially impossible
+reinstallation is an option Firmware rootkits surivive OS reinstallation
+
+#Rootkit payload
+steal user passwords
+credit card information
+computing resources
+unauthorized activities
+looks like ordinary driver
+backdoor for remote access
+keylogges
+botnet zombie
+
+good rootkits
+ Valve Anti Cheat • Daemon Tools
+• Kaspersky Anti Virus
+• KMS Tools
+• Computer program debuggers
+
+User-mode rootkit
+side by side
+inject DLL's
+vendor-supplied application extensions
+debuggers
+message interception
+function hooking for hiding running processes
+
+kernel-mode rootkit
+highest OS privilege
+add or replace core function of the OS
+device drivers
+loadable modules 
+unrestricted execution priviledges
+harder to develop and insert
+
+Firmware-level rootkit
+inerted into motherboard firmware
+Network card
+Storage device
+the UEFI or BIOS
+GPU
+USB host controller
+intel managment engine
+
+Rootkit method of interception
+to stop antirootkit tools
+modify code change pointers
+
+uses
+system events
+system calls
+object dispatcher
+
+TDL3
+Advanced control and data-flow hijacking techniques
+directly loads it code into the windows kernel
+good example of how kernel execution can be hooked after bypassing operating system integrity checks
+relies on key patterns of the kernel's own architecture
+discovered in 2010 - designed for the 32-bit version of windows 7
+TDL4 is the bootkit variant successor to TDL3
+
+
+
